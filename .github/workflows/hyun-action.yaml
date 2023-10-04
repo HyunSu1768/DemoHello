@@ -33,4 +33,3 @@ jobs:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-
