@@ -13,6 +13,6 @@ public class MainController {
 
     @GetMapping("/")
     public String main(){
-        return "Hello World!  " + env.getProperty("HOSTNAME");
+        return "Test World!  " + env.getProperty("HOSTNAME");
     }
 }
