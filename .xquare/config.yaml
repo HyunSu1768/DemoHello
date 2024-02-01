@@ -2,4 +2,4 @@ config:
     name: test-deploy
     service_type: be
     port: 8080
-    prefix: "/test"s
+    prefix: "/test"
