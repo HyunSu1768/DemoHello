@@ -1,0 +1,12 @@
+# 루트 디렉터리에 위치해야 함
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+
+  build:
+    commands:
+      - echo Building the application...
+      - echo Build complete!
