@@ -1,12 +1,19 @@
-# 루트 디렉터리에 위치해야 함
 version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      java: corretto17
     commands:
-      - echo Installing dependencies...
+      - echo Installing Gradle...
+      - chmod +x gradlew  # gradlew 실행 권한 부여
+      - ./gradlew dependencies
 
   build:
     commands:
       - echo Building the application...
-      - echo Build complete!
+      - ./gradlew build -x test
+
+artifacts:
+  files:
+    - build/libs/*.jar
